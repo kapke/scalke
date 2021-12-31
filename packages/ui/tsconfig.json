@@ -1,0 +1,13 @@
+{
+    "include": ["src/*"],
+    "buildOptions": {
+        "incremental": true
+    },
+    "compilerOptions": {
+        "strict": true,
+        "outDir": "dist",
+        "module": "esnext",
+        "moduleResolution": "node",
+        "target": "ES2021"
+    }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "aref",
+  "version": "0.0.1",
+  "main": "dist/src/main/typescript/main.js",
+  "type": "module",
+  "scripts": {
+    "build": "rimraf ./dist && sbt dist && tsc",
+    "prepack": "$npm_execpath run build"
+  },
+  "dependencies": {
+    "arefApi": "workspace:^",
+    "rxjs": "^7.5.1"
+  },
+  "devDependencies": {
+    "@types/rimraf": "^3",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.5.4"
+  }
+}

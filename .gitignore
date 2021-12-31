@@ -1,0 +1,8 @@
+node_modules
+.metals/
+.idea/
+.vscode/
+.bloop/
+.bsp/
+dist/
+target/

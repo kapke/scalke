@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "strict": true,
+        "moduleResolution": "node",
+        "outDir": "./dist",
+        "declaration": true,
+        "target": "ES2021"
+    }
+}

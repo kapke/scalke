@@ -1,0 +1,14 @@
+{
+    "include": ["src/main/typescript/*", "target/dist/*"],
+    "compilerOptions": {
+        "strict": true,
+        "allowJs": true,
+        "target": "ES2021",
+        "module": "es2022",
+        "moduleResolution": "node",
+        "declaration": true,
+        "noEmit": false,
+        "outDir": "./dist/",
+        "lib": ["ES2021"]
+    }
+}

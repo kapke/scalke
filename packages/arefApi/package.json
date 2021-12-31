@@ -1,0 +1,15 @@
+{
+  "name": "arefApi",
+  "type": "module",
+  "module": "./dist/main.js",
+  "main": "./dist/main.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^4.5.4"
+  },
+  "peerDependencies": {
+    "rxjs": "^7.5.1"
+  }
+}
