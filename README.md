@@ -3,9 +3,10 @@ A PoC project to play with Scala.js and nix
 
 # What, why, where
 
-1. Yarn 3 - just because it is modern, less commonly used, and has interesting approach to achieve reproducability by incentivising to commit cache folder. https://yarnpkg.com/
+1. Yarn 3 - just because it is modern, less commonly used, and has interesting approach to achieve reproducability by incentivising to commit cache folder (yes, `.yarn/cache` contains full cache used to reproduce `node_modules` when running `yarn install`). https://yarnpkg.com/
 2. Scala.js - to play with it in a more real-life scenario (even though it is still a playground project)
 3. nix - to finally learn this monstrosity
+4. Scalably typed - to convert TS Type definitions into Scala code. In that way a Scala code can blend in into otherwise-JS/TS app. It also enables one cool thing - implementing TS API's in Scala, at least as long as nothing crazy happens (that's why rxjs compaliation is disabled there and the implementation of `aref` is a TS wrapper for Scala implementation)
 
 # Installation
 
