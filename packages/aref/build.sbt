@@ -1,3 +1,5 @@
+import scala.sys.process.Process
+
 Global / onChangedBuildSource := ReloadOnSourceChanges
 
 lazy val root = (project in file("."))
@@ -8,7 +10,14 @@ lazy val root = (project in file("."))
     scalaJSLinkerConfig ~= { _.withModuleKind(ModuleKind.ESModule) },
     stEnableScalaJsDefined := Selection.All,
     externalNpm := {
-      baseDirectory.value
+      val log = streams.value.log
+      val baseDir = baseDirectory.value
+      val rootDirectory = baseDir.getParentFile.getParentFile
+      val rootNodeModules = rootDirectory / "node_modules"
+
+      Process(s"ln -s ${rootNodeModules.getAbsolutePath}", baseDir).!!
+
+      baseDir
     },
     stIgnore += "rxjs",
     libraryDependencies ++= Seq(
