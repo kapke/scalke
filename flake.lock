@@ -51,7 +51,23 @@
       "inputs": {
         "flake-utils": "flake-utils",
         "nixpkgs": "nixpkgs",
-        "nixpkgs-unstable": "nixpkgs-unstable"
+        "nixpkgs-unstable": "nixpkgs-unstable",
+        "sbt-derivation": "sbt-derivation"
+      }
+    },
+    "sbt-derivation": {
+      "locked": {
+        "lastModified": 1617466857,
+        "narHash": "sha256-Z7eWMLreLtiSiJ3nWDWBy1w9WNEFexkYCgT/dWZF7yo=",
+        "owner": "zaninime",
+        "repo": "sbt-derivation",
+        "rev": "920b6f187937493371e2b1687261017e6e014cf1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "zaninime",
+        "repo": "sbt-derivation",
+        "type": "github"
       }
     }
   },

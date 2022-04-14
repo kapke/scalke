@@ -1,0 +1,92 @@
+{
+  "main": {
+    "id": "9f190648489cde34",
+    "type": "split",
+    "children": [
+      {
+        "id": "ab764b206eb2c2f7",
+        "type": "leaf",
+        "state": {
+          "type": "kanban",
+          "state": {
+            "file": "TODO.md"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "9b87e1482a323511",
+    "type": "split",
+    "children": [
+      {
+        "id": "05f3e63d7f55ba73",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "58404b881dbcb61a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "06f79d64299a71bb",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "653e172a2cf591b3",
+    "type": "split",
+    "children": [
+      {
+        "id": "31e0d5e289781c0d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f02d81ed95ac3585",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "TODO.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "ab764b206eb2c2f7",
+  "lastOpenFiles": [
+    "TODO.md"
+  ]
+}

@@ -4,11 +4,16 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-21.11";
     nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable"; #because of node2nix, 1.10 supports node.js 16
     flake-utils.url = "github:numtide/flake-utils";
+    sbt-derivation = {
+      type = "github";
+      owner = "zaninime";
+      repo = "sbt-derivation";
+    };
   };
-  outputs = { self, nixpkgs, nixpkgs-unstable, flake-utils }:
+  outputs = { self, nixpkgs, nixpkgs-unstable, flake-utils, sbt-derivation }:
     let
       system = "x86_64-darwin";
-      pkgs = import nixpkgs { inherit system; };
+      pkgs = import nixpkgs { inherit system; overlays = [ sbt-derivation.overlay ]; };
       pkgsUnstable = import nixpkgs-unstable { inherit system; };
       inherit (pkgs) stdenv lib nodejs-16_x exa;
       baseNode = nodejs-16_x;
